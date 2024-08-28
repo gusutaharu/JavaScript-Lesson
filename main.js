@@ -1,11 +1,8 @@
 `use strict`;
 
-const score = Number(prompt("Score?"));
-
-if (score >= 90) {
-  console.log('A!');
-} else if (score >= 70) {
-  console.log('B!')
-} else {
-  console.log('C')
+// for(let i = 0; i < 3; i++){
+// for(let i = 1; i < 11; i++){
+  for(let i = 1; i <= 10; i++){
+  // console.log('Hello');
+  console.log(`${i}: Hello`);
 }
