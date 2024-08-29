@@ -1,18 +1,15 @@
 `use strict`;
 
 {
-  function showAd() {
-    console.log("---------");
-    console.log("SALE! 50% OFF!");
-    console.log("---------");
-  }
+  const scores = [
+    70,
+    90,
+    80,
+    85,
+  ];
 
-  function showContent(){
-    console.log("BREAKING NEWS!");
-    console.log("Two baby pands born at our Zoo!");
-  }
-
-  showAd();
-  showContent();
-  showAd();
+  console.log(scores[2]);
+  console.log(scores.length);
+  scores[1] = 95;
+  console.log(scores);
 }
