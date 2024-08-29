@@ -1,12 +1,12 @@
 `use strict`;
 
 {
-  function sum(a,b){
-    return a + b;
-  // }
-  // function sum(a,b) {
-    // console.log(a + b);
-    // return undefined
+  function calculateTotal(price,amount,rate= 1.1){
+    return price * amount * rate;
   }
-  console.log(sum(300,700)*3);
+
+  console.log(calculateTotal(100, 10, 1.1));
+  console.log(calculateTotal(150, 10, 1.1));
+  console.log(calculateTotal(200, 10, 1.1));
+  console.log(calculateTotal(120, 10, 1.08));
 }
