@@ -1,10 +1,6 @@
 `use strict`;
 
-let x = 10;
-
 {
-  let x = 20;
+  let x = 10;
   console.log(x);
 }
-
-console.log(x);
