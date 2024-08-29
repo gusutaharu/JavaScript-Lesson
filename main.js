@@ -1,20 +1,14 @@
 `use strict`;
 
+let amount = 100;
 
-// let command = Number(prompt('Menu 1, 2, 3 or 0 exit'));
-
-// while (command !== 0) {
-//   console.log(`Menu ${command} processed`);
-//   command = Number(prompt('Menu 1, 2, 3 or 0 exit'));
-// }
-
-let command;
-
-do {
-  command = Number(prompt('Menu 1, 2, 3 or 0 exit'));
-  if(command === 0){
-    console.log('Exited');
-  }else {
-    console.log(`Menu ${command} processed`)
+for(let year = 1; year <= 30; year++){
+  amount *= 1.05;
+  if (amount < 200){
+    continue;
   }
-} while ( command !== 0);
+  if (amount > 300){
+    break;
+  }
+  console.log(`Year ${year}: ${amount}`);
+}
