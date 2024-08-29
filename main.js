@@ -1,14 +1,10 @@
 `use strict`;
 
-let amount = 100;
+const english = Number(prompt('English?'));
+const math = Number(prompt('Math?'));
 
-for(let year = 1; year <= 30; year++){
-  amount *= 1.05;
-  if (amount < 200){
-    continue;
-  }
-  if (amount > 300){
-    break;
-  }
-  console.log(`Year ${year}: ${amount}`);
+if (english >= 80 && math >= 80) {
+  console.log('A');
+} else {
+  console.log('B');
 }
