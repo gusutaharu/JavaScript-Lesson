@@ -1,12 +1,18 @@
 `use strict`;
 
 {
-  function double(num){
-    return num * 2
+  function showAd() {
+    console.log("---------");
+    console.log("SALE! 50% OFF!");
+    console.log("---------");
   }
-  function triple(num){
-    return num * 3
+
+  function showContent(){
+    console.log("BREAKING NEWS!");
+    console.log("Two baby pands born at our Zoo!");
   }
-  console.log(double(10));
-  console.log(triple(20));
+
+  showAd();
+  showContent();
+  showAd();
 }
