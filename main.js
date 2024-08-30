@@ -1,20 +1,14 @@
 `use strict`;
 
 {
-  const scores = [
-    70,
-    90,
-    80,
-    85,
-  ];
+  const scores = {
+    math: 80,
+    english: 90,
+  };
 
-  let sum = 0;
-  
-  scores.forEach((score,index) => {
-    sum += score;
-    console.log(`${index}: ${score}`);
-  });
-
-  console.log(`Sum: ${sum}`);
-  console.log(`Average: ${sum / scores.length}`)
+  // console.log(scores['english']);
+  console.log(scores.english);
+  // scores['math'] = 88;
+  scores.math = 88;
+  console.log(scores);
 }
