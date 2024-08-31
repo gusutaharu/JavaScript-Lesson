@@ -5,8 +5,15 @@
     math: 80,
     english: 90,
   };
+  let sum = 0;
 
   scores.physics = 70;
-  delete scores.english;
-  console.log(scores);
+
+  const entries = Object.entries(scores);
+  entries.forEach((prop) => {
+    sum  += prop[1];
+    console.log(`${prop[0]}: ${prop[1]}`);
+  });
+  console.log(`Sum: ${sum}`);
+  console.log(`Average: ${sum / entries.length}`);
 }
