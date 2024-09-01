@@ -1,18 +1,15 @@
 `use strict`;
 
 {
-  const  prices = [100, 150, 200];
+  const  scores = [70, 90, 80, 85];
+  // const first = scores[0];
+  // const second = scores[1];
+  // const third = scores[2];
+  // const fourth = scores[3];
+  const [first, second, third, fourth] = scores;
 
-  // const pricesOver150 = [];
-  // prices.forEach((price)=>{
-  //   if (price >= 150){
-  //     pricesOver150.push(price);
-  //   }
-  // });
-
-  const pricesOver150 = prices.filter((price)=>{
-    return price >= 150;
-  });
-
-  console.log(pricesOver150);
+  console.log(first);
+  console.log(second);
+  console.log(third);
+  console.log(fourth);
 }
