@@ -1,12 +1,15 @@
 `use strict`;
 
 {
-  // const names = ['Taro', 'Jiro', 'Saburo']
-  // //Taro|Jiro|Saburo
-  // console.log(names.join(`|`));
-  // console.log(names.join());
-  // console.log(names.join(``));
+  const  prices = [100, 150, 200];
 
-  const names = 'Taro|Jiro|Saburo';
-  console.log(names.split('|'));
+  // const pricesWithTax = [];
+  // prices.forEach((price)=>{
+  //   pricesWithTax.push(price * 1.1)
+  // });
+
+  const pricesWithTax = prices.map((price)=>{
+    return price * 1.1;
+  });
+  console.log(pricesWithTax);
 }
