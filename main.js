@@ -3,13 +3,16 @@
 {
   const  prices = [100, 150, 200];
 
-  // const pricesWithTax = [];
+  // const pricesOver150 = [];
   // prices.forEach((price)=>{
-  //   pricesWithTax.push(price * 1.1)
+  //   if (price >= 150){
+  //     pricesOver150.push(price);
+  //   }
   // });
 
-  const pricesWithTax = prices.map((price)=>{
-    return price * 1.1;
+  const pricesOver150 = prices.filter((price)=>{
+    return price >= 150;
   });
-  console.log(pricesWithTax);
+
+  console.log(pricesOver150);
 }
