@@ -1,19 +1,14 @@
 `use strict`;
 
 {
-  let start = 'Tokyo';
-  let goal = 'Osaka';
-
-  // start = goal; //start = Osaka
-  // goal = start; //goal = start = Osaka
-
-  // let temp = '';
-  // temp = start;
-  // start = goal;
-  // goal = temp;
-
-  [goal, start] = [start, goal];
-
-  console.log(start);
-  console.log(goal);
+  // let num = 10;
+  // const numBackup = num;
+  // num = 99;
+  // console.log(num);
+  // console.log(numBackup);
+  const nums = [10,20,30];
+  const numsBackup = nums;
+  nums[0] = 99;
+  console.log(nums);
+  console.log(numsBackup);
 }
