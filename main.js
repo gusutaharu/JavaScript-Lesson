@@ -2,5 +2,7 @@
 
 {
 const n =  Number(prompt('Number?'));
-console.log(`${Math.floor(n/60)}時間 ${n%60}分`);
+console.log(`Hours:${Math.floor(n/60)}`);
+console.log(`Minutes:${n%60}分`);
+// Math.ceil Math.floor Math.round
 }
