@@ -2,5 +2,5 @@
 
 {
 const n =  Number(prompt('Number?'));
-console.log(n + 5);
+console.log(`${Math.floor(n/60)}時間 ${n%60}分`);
 }
