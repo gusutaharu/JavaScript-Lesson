@@ -1,12 +1,14 @@
 `use strict`;
 
 {
-const n =  Number(prompt('Count?'));
-for  (let i = 0; i < n; i++) {
-  if (i % 3 === 0) {
-    console.log(`--- item ${i} ---`);
-  } else {
-    console.log(`=== item ${i} ===`)
-  }
-}
+  const scores = [70, 90, 80, 75];
+  // let max = 0;
+  // scores.forEach((score) => {
+  //   if( max < score ){
+  //     max = score
+  //   }
+  // });
+  // console.log(max);
+  console.log(Math.max(...scores));
+  console.log(Math.min(...scores));
 }
