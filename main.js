@@ -8,8 +8,8 @@
   ];
 
   emails.forEach((email)=>{
-    const loc = email.indexOf('@');
-    // console.log(email.slice(0, loc));
-    console.log(email.substring(0, loc));
+    //console.log(email.replace('@example.com', ''))
+    const items = email.split('@');
+    console.log(items[0])
   });
 }
