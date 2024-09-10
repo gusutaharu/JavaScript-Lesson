@@ -8,14 +8,8 @@
   ];
 
   emails.forEach((email)=>{
-    // if (email.includes('taro') === true){
-    //   console.log(email);
-    // }
-    // if  (email.indexOf('taro') === 0){
-    //   console.log(email);
-    // }
-    if (email.startsWith('taro') === true){
-      console.log(email);
-    }
+    const loc = email.indexOf('@');
+    // console.log(email.slice(0, loc));
+    console.log(email.substring(0, loc));
   });
 }
