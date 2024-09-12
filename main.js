@@ -1,13 +1,12 @@
 `use strict`;
 
 {
-  //2000 4 11
-  const d = new Date(2000, 3, 11);
-  // const dBackup = d;
-  // const dBackup = new Date(d.getFullYear(), d.getMonth(),d.getDate())
-  const dBackup = new Date(d.getTime());
-  d.setDate(23);
+  // 2023 6 10
+  // new Date() - new Date(2023, 5, 10)
+  // const diff =new Date().getTime() - new Date(2023, 5, 10).getTime();
+  const diff = Date.now() - new Date(2023, 5, 10).getTime();
+  const days = Math.floor(diff / 1000/ 60 / 60 /24);
+  console.log(diff);
+  console.log(days);
 
-  console.log(d.toLocaleString());//23
-  console.log(dBackup.toLocaleString());//11
 }
