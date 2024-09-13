@@ -1,12 +1,12 @@
 `use strict`;
 
 {
-  // 2023 6 10
-  // new Date() - new Date(2023, 5, 10)
-  // const diff =new Date().getTime() - new Date(2023, 5, 10).getTime();
-  const diff = Date.now() - new Date(2023, 5, 10).getTime();
-  const days = Math.floor(diff / 1000/ 60 / 60 /24);
-  console.log(diff);
-  console.log(days);
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const d = new Date(2001, 0, 1)
 
+  const month = months[d.getMonth()];
+  const date = d.getDate();
+  const day = days[d.getDay()];
+  console.log(`${month}, ${date}, ${day}`);
 }
