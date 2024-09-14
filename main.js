@@ -10,4 +10,6 @@
       clearInterval(intervalId);
     }
   },1000)
+
+  console.log(`ID: ${intervalId}`);
 }
