@@ -1,15 +1,10 @@
 `use strict`;
 
 {
-  let count = 3;
+  setTimeout(()=>{
+    // console.log('50% OFF!');
+    window.location.href = 'https://256times.com';
+  }, 3000)
 
-  const intervalId = setInterval(()=>{
-    console.log(count);
-    count--;
-    if(count < 0) {
-      clearInterval(intervalId);
-    }
-  },1000)
-
-  console.log(`ID: ${intervalId}`);
+  console.log('Page loaded');
 }
