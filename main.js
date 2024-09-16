@@ -1,20 +1,21 @@
 `use strict`;
 
 {
+  
+  let isDevMOde  = true;
   const pElement = document.querySelector('p');
   const buttonElement = document.querySelector('button');
-  let timeoutId;
 
-  function showClock(){
-    timeoutId = setTimeout(() => {
-      pElement.textContent = new Date();
-      showClock();
-    }, 1000);
-  }
-
-  buttonElement.addEventListener('click',()=>{
-    clearTimeout(timeoutId);
+  buttonElement.addEventListener('click', ()=>{
+    if (confirm('Are you sure?')) {
+      if (isDevMOde) {
+        pElement.textContent  = 'Dev Mode is Off';
+        // isDevMOde  = false;
+      } else {
+        pElement.textContent = 'Dev Mode is On';
+        // isDevMOde = true;
+      }
+      isDevMOde = !isDevMOde
+    }
   })
-
-  showClock();
 }
