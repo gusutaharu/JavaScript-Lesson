@@ -3,13 +3,18 @@
 {
   const pElement = document.querySelector('p');
   const buttonElement = document.querySelector('button');
+  let timeoutId;
 
   function showClock(){
-    setTimeout(() => {
+    timeoutId = setTimeout(() => {
       pElement.textContent = new Date();
       showClock();
     }, 1000);
   }
+
+  buttonElement.addEventListener('click',()=>{
+    clearTimeout(timeoutId);
+  })
 
   showClock();
 }
