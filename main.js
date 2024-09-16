@@ -1,13 +1,12 @@
 `use strict`;
 
 {
-  setTimeout(() => {
-    console.log(new Date());
+  function showClock(){
     setTimeout(() => {
       console.log(new Date());
-      setTimeout(() => {
-        console.log(new Date());
-      }, 1000);
+      showClock();
     }, 1000);
-  }, 1000);
+  }
+
+  showClock();
 }
