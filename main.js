@@ -1,9 +1,12 @@
 `use strict`;
 
 {
+  const pElement = document.querySelector('p');
+  const buttonElement = document.querySelector('button');
+
   function showClock(){
     setTimeout(() => {
-      console.log(new Date());
+      pElement.textContent = new Date();
       showClock();
     }, 1000);
   }
