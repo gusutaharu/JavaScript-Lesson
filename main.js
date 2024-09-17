@@ -1,23 +1,14 @@
 `use strict`;
 
 {
+  //null
   
-  let isDevMOde  = true;
-  const pElement = document.querySelector('p');
-  const buttonElement = document.querySelector('button');
-
-  buttonElement.addEventListener('click', ()=>{
-    // if (confirm('Are you sure?') === false) {
-      if (!confirm('Are you sure?')){
-      return;
-    }
-    if (isDevMOde) {
-      pElement.textContent  = 'Dev Mode is Off';
-        // isDevMOde  = false;
-    } else {
-      pElement.textContent = 'Dev Mode is On';
-        // isDevMOde = true;
-    }
-    isDevMOde = !isDevMOde
-    })
+  const score = {
+    math: 80,
+    english: 90,
+    physics: null,
+  };
+  if  (score.physics === null) {
+    console.log('Physics score not defined!')
+  }
 }
