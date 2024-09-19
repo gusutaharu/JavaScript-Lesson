@@ -7,14 +7,19 @@
       this.result = result;
     }
     
+    getGrade(){
+      // let grade;
+      // if (this.result >= 80){
+      //   grade = 'A';
+      // } else {
+      //   grade = 'B';
+      // }
+      // return grade;
+      return this.result >= 80 ? 'A' : 'B';
+    }
+
     getScoreString(){
-      let grade;
-      if (this.result >= 80){
-        grade = 'A';
-      } else {
-        grade = 'B';
-      }
-      return `${this.subject} ${this.result} ${grade}`;
+      return `${this.subject} ${this.result} ${this.getGrade()}`;
     }
   }
 
