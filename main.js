@@ -6,6 +6,16 @@
       this.subject = subject;
       this.result = result;
     }
+    
+    getScoreString(){
+      let grade;
+      if (this.result >= 80){
+        grade = 'A';
+      } else {
+        grade = 'B';
+      }
+      return `${this.subject} ${this.result} ${grade}`;
+    }
   }
 
   class User {
@@ -15,7 +25,6 @@
     }
 
     getUserString(){
-      // return `${this.name} ${this.score.subject} ${this.score.result}`;
       return `${this.name} ${this.score.getScoreString()}`;
     }
   }
