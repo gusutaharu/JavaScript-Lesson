@@ -8,18 +8,23 @@
     }
     
     getGrade(){
-      // let grade;
-      // if (this.result >= 80){
-      //   grade = 'A';
-      // } else {
-      //   grade = 'B';
-      // }
-      // return grade;
       return this.result >= 80 ? 'A' : 'B';
     }
 
     getScoreString(){
       return `${this.subject} ${this.result} ${this.getGrade()}`;
+    }
+  }
+
+  class MathScore extends Score {
+    constructor(result) {
+      super('Math', result)
+    }
+  }
+
+  class EnglishScore extends Score {
+    constructor(result) {
+      super('English', result)
     }
   }
 
@@ -34,8 +39,8 @@
     }
   }
 
-  const user1 = new User('Taro', new Score('Math', 70));
-  const user2 = new User('Jiro', new Score('English', 80));
+  const user1 = new User('Taro', new MathScore(70));
+  const user2 = new User('Jiro', new EnglishScore(80));
 
   console.log(user1.getUserString());
   console.log(user2.getUserString());
