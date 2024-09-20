@@ -20,6 +20,9 @@
     constructor(result) {
       super('Math', result)
     }
+    getGrade(){
+      return this.result >= 50 ? 'A' : 'B';
+    }
   }
 
   class EnglishScore extends Score {
