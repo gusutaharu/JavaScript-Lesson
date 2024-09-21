@@ -14,6 +14,10 @@
     getUserString(){
       return `${this.name} ${this.score}`;
     }
+
+    static getUserCountString(){
+      return `${User.count} instance(s) created.`;
+    }
   }
 
   // let count = 0;
@@ -21,7 +25,7 @@
   // count++;
   const user2 = new User('Jiro',80);
   // count++;
-  console.log(User.count);
+  console.log(User.getUserCountString());
 
   console.log(user1.getUserString());
   console.log(user2.getUserString());
