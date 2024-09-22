@@ -13,8 +13,12 @@
       return this.#score;
     }
 
+    #isValueValid(newValue) {
+      return newValue < 0 || newValue > 100 ? false : true;
+    }
+
     set score(newValue) {
-      if (newValue < 0 || newValue > 100){
+      if (this.#isValueValid(newValue) === false ){
         console.log('Invalid value!');
         return;
       }
@@ -23,6 +27,7 @@
   }
 
   const user = new User('Taro',70);
-  user.#score = 101;
+  user.score = 9999;
   console.log(user.score);
+  // console.log(user.#isValueValid(50));
 }
