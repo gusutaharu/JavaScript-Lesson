@@ -6,7 +6,8 @@
   }
 
   function showUsers(){
-    console.log('Users');
+    const response = fetch('https://dotinstall.github.io/setup/fetchapi/users.json');
+    console.log(response);
   }
 
   function showFooter(){
