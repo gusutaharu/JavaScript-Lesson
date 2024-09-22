@@ -3,14 +3,14 @@
 {
   class User {
     name;
-    _score;
+    #score;
     constructor(name, score){
       this.name = name;
-      this._score = score;
+      this.#score = score;
     }
 
     get score() {
-      return this._score;
+      return this.#score;
     }
 
     set score(newValue) {
@@ -18,11 +18,11 @@
         console.log('Invalid value!');
         return;
       }
-      this._score = newValue;
+      this.#score = newValue;
     }
   }
 
   const user = new User('Taro',70);
-  user.score = 101;
+  user.#score = 101;
   console.log(user.score);
 }
