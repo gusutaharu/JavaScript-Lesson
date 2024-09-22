@@ -1,33 +1,19 @@
 `use strict`;
 
 {
-  class User {
-    name;
-    #score;
-    constructor(name, score){
-      this.name = name;
-      this.#score = score;
-    }
-
-    get score() {
-      return this.#score;
-    }
-
-    #isValueValid(newValue) {
-      return newValue < 0 || newValue > 100 ? false : true;
-    }
-
-    set score(newValue) {
-      if (this.#isValueValid(newValue) === false ){
-        console.log('Invalid value!');
-        return;
-      }
-      this.#score = newValue;
-    }
+  function showHeader(){
+    console.log('Header');
   }
 
-  const user = new User('Taro',70);
-  user.score = 9999;
-  console.log(user.score);
-  // console.log(user.#isValueValid(50));
+  function showUsers(){
+    console.log('Users');
+  }
+
+  function showFooter(){
+    console.log('Footer');
+  }
+
+  showHeader();
+  showUsers();
+  showFooter();
 }
